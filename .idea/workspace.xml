@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e28e694-3dde-4c59-bfce-8cda8e6a8d30" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapter2/sample/main.go" afterPath="$PROJECT_DIR$/chapter2/sample/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapter2/sample/matchers/rss.go" afterPath="$PROJECT_DIR$/chapter2/sample/matchers/rss.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chapter2/sample/search/feed.go" afterPath="$PROJECT_DIR$/chapter2/sample/search/feed.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -375,7 +372,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="2418" height="1318" extended-state="0" />
+    <frame x="2391" y="-9" width="2418" height="1318" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20791666" sideWeight="0.49638802" order="0" side_tool="false" content_ui="combo" />
