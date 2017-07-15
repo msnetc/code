@@ -46,7 +46,7 @@ func doWork(name string) {
 
 	for {
 		fmt.Printf("Doing %s Work\n", name)
-		time.Sleep(250 * time.Millisecond)
+		time.Sleep(30 * time.Millisecond)
 
 		// Do we need to shutdown.
 		if atomic.LoadInt64(&shutdown) == 1 {

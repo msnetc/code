@@ -18,7 +18,7 @@ type user struct {
 }
 
 // notify implements the notifier interface with a pointer receiver.
-func (u *user) notify() {
+func (u user) notify() {
 	fmt.Printf("Sending user email to %s<%s>\n",
 		u.name,
 		u.email)
@@ -31,7 +31,7 @@ type admin struct {
 }
 
 // notify implements the notifier interface with a pointer receiver.
-func (a *admin) notify() {
+func (a admin) notify() {
 	fmt.Printf("Sending admin email to %s<%s>\n",
 		a.name,
 		a.email)
@@ -41,11 +41,11 @@ func (a *admin) notify() {
 func main() {
 	// Create a user value and pass it to sendNotification.
 	bill := user{"Bill", "bill@email.com"}
-	sendNotification(&bill)
+	sendNotification(bill)
 
 	// Create an admin value and pass it to sendNotification.
 	lisa := admin{"Lisa", "lisa@email.com"}
-	sendNotification(&lisa)
+	sendNotification(lisa)
 }
 
 // sendNotification accepts values that implement the notifier

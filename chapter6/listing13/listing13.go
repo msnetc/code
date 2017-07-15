@@ -39,6 +39,8 @@ func incCounter(id int) {
 	defer wg.Done()
 
 	for count := 0; count < 2; count++ {
+
+
 		// Safely Add One To Counter.
 		atomic.AddInt64(&counter, 1)
 

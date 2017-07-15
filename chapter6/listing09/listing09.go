@@ -23,8 +23,9 @@ func main() {
 
 	// Create two goroutines.
 	go incCounter(1)
-	go incCounter(2)
+	go incCounter(5)
 
+	fmt.Println("hel'miaolo ")
 	// Wait for the goroutines to finish.
 	wg.Wait()
 	fmt.Println("Final Counter:", counter)
@@ -35,7 +36,7 @@ func incCounter(id int) {
 	// Schedule the call to Done to tell main we are done.
 	defer wg.Done()
 
-	for count := 0; count < 2; count++ {
+	for count := 0; count < 5; count++ {
 		// Capture the value of Counter.
 		value := counter
 

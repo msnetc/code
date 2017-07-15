@@ -25,8 +25,8 @@ func main() {
 	wg.Add(2)
 
 	// Launch two players.
-	go player("Nadal", court)
-	go player("Djokovic", court)
+	go player("乔峰的降龙十八掌", court)
+	go player("慕容复的斗转星移", court)
 
 	// Start the set.
 	court <- 1
@@ -50,7 +50,7 @@ func player(name string, court chan int) {
 		}
 
 		// Pick a random number and see if we miss the ball.
-		n := rand.Intn(100)
+		n := rand.Intn(200)
 		if n%13 == 0 {
 			fmt.Printf("Player %s Missed\n", name)
 

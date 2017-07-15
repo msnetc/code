@@ -13,8 +13,10 @@ var wg sync.WaitGroup
 
 // main is the entry point for all Go programs.
 func main() {
+
+	fmt.Println("CPU的个数是", runtime.NumCPU())
 	// Allocate 1 logical processors for the scheduler to use.
-	runtime.GOMAXPROCS(1)
+	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	// Add a count of two, one for each goroutine.
 	wg.Add(2)
@@ -23,6 +25,10 @@ func main() {
 	fmt.Println("Create Goroutines")
 	go printPrime("A")
 	go printPrime("B")
+
+	fmt.Println("go rountine的个数是", runtime.NumGoroutine())
+	// Allocate 1 logical processors for the scheduler to use.
+	runtime.GOMAXPROCS(runtime.NumCPU())
 
 	// Wait for the goroutines to finish.
 	fmt.Println("Waiting To Finish")
